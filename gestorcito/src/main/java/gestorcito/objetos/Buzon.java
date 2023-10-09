@@ -10,12 +10,12 @@ public class Buzon {
         mensajes= new ArrayList<>();
     }
     
-    public void enviarMensaje(Usuario remitente, Usuario destinatario,String asunto,String contenido){
+    public void enviarMensaje(Usuario remitente, Usuario destinatarios,String asunto,String contenido){
     //Aca hago lo mismo si asunto no tiene nada
         if(asunto== null || asunto.isEmpty()){
         asunto="Sin asunto";
     }
-        Mensaje mensaje_usuario= new Mensaje(remitente,destinatario,asunto,contenido);
+        Mensaje mensaje_usuario= new Mensaje(remitente,destinatarios,asunto,contenido);
     mensajes.add(mensaje_usuario);
     }
     public List<Mensaje> getMensajes(){

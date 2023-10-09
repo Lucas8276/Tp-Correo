@@ -12,4 +12,7 @@ public class BandejaSalida {
     public void enviarMensaje(Mensaje mensaje){
     mensajes.add(mensaje);
     }
+    public List<Mensaje> getMensajes() {
+        return mensajes;
+    }
 }

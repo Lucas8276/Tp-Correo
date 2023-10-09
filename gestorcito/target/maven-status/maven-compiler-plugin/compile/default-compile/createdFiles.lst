@@ -1,0 +1,14 @@
+gestorcito\objetos\BandejaEntrada.class
+gestorcito\Main.class
+gestorcito\objetos\Buzon.class
+gestorcito\objetos\Contacto.class
+gestorcito\filtros\Filtro_Destinatario_Asunto_Contenido.class
+gestorcito\filtros\Filtro_Combinado_Destinatario_Asunto.class
+gestorcito\interfac\FIltro_Base.class
+gestorcito\filtros\Filtro_Contenido.class
+gestorcito\filtros\Filtro_Combinado.class
+gestorcito\filtros\Filtro_Destinatario.class
+gestorcito\objetos\Usuario.class
+gestorcito\objetos\Mensaje.class
+gestorcito\filtros\Filtro_Asunto.class
+gestorcito\objetos\BandejaSalida.class

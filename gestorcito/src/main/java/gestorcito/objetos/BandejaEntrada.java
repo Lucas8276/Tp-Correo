@@ -9,4 +9,7 @@ public class BandejaEntrada {
     public void recibirMensaje(Mensaje mensaje){
     mensajes.add(mensaje);
     }
+    public List<Mensaje> getMensajes() {
+        return mensajes;
+    }
 }
