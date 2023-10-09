@@ -80,25 +80,6 @@ public class Usuario{
 <span class="fc" id="L80">    this.nombre= tomadeentrada;</span>
 <span class="fc" id="L81">    escaneado.close();</span>
 <span class="fc" id="L82">    }</span>
-    public void crear_contrasenia(Scanner respuesta){
-<span class="nc" id="L84">    Scanner entrada= new Scanner(System.in); </span>
-<span class="nc" id="L85">    System.out.print(&quot;Cree su nueva contraseña: &quot;);</span>
-<span class="nc" id="L86">    String tomaderta=entrada.nextLine();</span>
-<span class="nc" id="L87">    this.contrasenia=tomaderta;</span>
-
-<span class="nc" id="L89">    Scanner entrada2= new Scanner(System.in);</span>
-<span class="nc" id="L90">    System.out.print(&quot;Repita su nueva contraseña: &quot;);</span>
-<span class="nc" id="L91">    String comprobacion = entrada2.nextLine();</span>
     
-<span class="nc" id="L93">    entrada.close();</span>
-<span class="nc" id="L94">    entrada2.close();</span>
-
-<span class="nc bnc" id="L96" title="All 2 branches missed.">    if (getContrasenia().equals(comprobacion)) {</span>
-<span class="nc" id="L97">        System.out.println(&quot;Excelente, cumpliste con las condiciones necesarias para la creación de tu contraseña&quot;);</span>
-        } 
-    else {
-<span class="nc" id="L100">        System.out.println(&quot;No cumpliste con el requisito. Vuelve a intentarlo.&quot;);</span>
-        }
-<span class="nc" id="L102">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

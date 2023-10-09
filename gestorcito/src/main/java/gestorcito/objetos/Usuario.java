@@ -1,6 +1,6 @@
 package gestorcito.objetos;
 
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -80,24 +80,5 @@ public class Usuario{
     this.nombre= tomadeentrada;
     escaneado.close();
     }
-    public void crear_contrasenia(Scanner respuesta){
-    Scanner entrada= new Scanner(System.in); 
-    System.out.print("Cree su nueva contraseña: ");
-    String tomaderta=entrada.nextLine();
-    this.contrasenia=tomaderta;
-
-    Scanner entrada2= new Scanner(System.in);
-    System.out.print("Repita su nueva contraseña: ");
-    String comprobacion = entrada2.nextLine();
     
-    entrada.close();
-    entrada2.close();
-
-    if (getContrasenia().equals(comprobacion)) {
-        System.out.println("Excelente, cumpliste con las condiciones necesarias para la creación de tu contraseña");
-        } 
-    else {
-        System.out.println("No cumpliste con el requisito. Vuelve a intentarlo.");
-        }
-    }
 }

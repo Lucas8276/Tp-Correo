@@ -6,6 +6,5 @@ TestFIltro_Combinado_Asunto_Destinatario.class
 Mensaje_Test.class
 TestFiltro_Asunto.class
 TestFiltro_Combinado.class
-Buzon_Test.class
 TestFiltro_Combinado_Destinatario_Asunto.class
 UsuarioTest.class
