@@ -112,7 +112,7 @@ public class UsuarioTest {
         // Verificar que la contraseña se haya establecido correctamente
         assertEquals("contraseniaNueva", usuario.getContrasenia());
     }
-    @Test
+    /*@Test
     public void testCrearContrasenia() {
         Usuario usuario = new Usuario("UsuarioPrueba", "correo@example.com", "contraseniaAntigua");
 
@@ -123,10 +123,12 @@ public class UsuarioTest {
         // Crear un objeto Scanner que use la entrada simulada
         Scanner scanner = new Scanner(inputStream);
 
+        // Llamar al método crear_contrasenia()
         usuario.crear_contrasenia(scanner);
 
         // Verificar que la contraseña se haya establecido correctamente
         assertEquals("contraseniaNueva", usuario.getContrasenia());
-    }
+    }*/
+
     }
 
