@@ -12,6 +12,32 @@ import org.junit.*;
 import gestorcito.objetos.Mensaje;
 import gestorcito.objetos.Usuario;
 public class UsuarioTest {
+  
+   
+    @Test
+    public void enviarMensajeAVariosDestinatarios_mil(){
+        List<Usuario> destinatarios = new ArrayList<>();
+         Usuario remitente = new Usuario("Remitente", "remitente@example.com", "contrasenia1");         
+         for (int x=0;x <100;x++){
+            Usuario destinatario=new Usuario("Destinatario", "des@mail.com", "1234");
+            remitente.agregarAContactos(destinatario); 
+            destinatarios.add(destinatario);
+    }
+        String asunto = "Tp2";
+        String contenido = "Hola, esto es un mensaje de prueba.";
+        remitente.enviarMensaje(destinatarios, asunto, contenido);
+        for (int x=0;x <100;x++){
+            Usuario d= destinatarios.get(0);
+            d.getBandejaEntrada().getMensajes();
+            List<Mensaje>xd = d.getBandejaEntrada().getMensajes();
+            Mensaje xf= xd.get(0);
+            assertEquals(1,d.getBandejaEntrada().getMensajes().size());
+            assertEquals(asunto,xf.getAsunto());
+
+    }
+        
+        assertEquals(100, destinatarios.size());       
+    }
     @Test
     public void enviarMensajeAVariosDestinatarios() {
         // Crear usuarios
